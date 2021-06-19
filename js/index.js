@@ -1,34 +1,3 @@
-// // $(document).ready(function(){
-// //     $('.next').on('click', function(){
-// //       var currentImg = $('.active');
-// //       var nextImg = currentImg.next();
-// //       var firstImg = currentImg.first();
-
-// //       if(nextImg.length != 0){
-// //         console.log(nextImg.length);
-// //         currentImg.removeClass('active').css('z-index', -10);
-// //         nextImg.addClass('active').css('z-index', 10);
-// //       }
-// //     });
-  
-// //     $('.prev').on('click', function(){
-// //       var currentImg = $('.active');
-// //       var prevImg = currentImg.prev();
-// //       var lastImg = currentImg.last();
-
-// //       if(prevImg.length != 0){
-// //         console.log(prevImg.length);
-// //         currentImg.removeClass('active').css('z-index', -10);
-// //         prevImg.addClass('active').css('z-index', 10);
-// //       }
-// //       if(prevImg.length == 0) {
-// //         console.log(prevImg.length);
-// //         currentImg.removeClass('active').css('z-index', -10);
-// //         lastImg.addClass('active').css('z-index', 10);
-// //       }
-// //     });
-// // });
-
 const prev = $("#previous");
 const buttonnext = $("#next");
 const images = $("#slider-inner div");
@@ -68,6 +37,6 @@ function updateSlider() {
 
 }
 
-navbar.load("navbar.html");
+navbar.load("html/navbar.html");
   
   
