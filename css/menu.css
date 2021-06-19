@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 10px auto;
+}
+
+.tittle{
+    margin-bottom: 60px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.tittle h4{
+    text-align: capitalize;
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.tittle h4 span{
+    display: block;
+    font-style: italic;
+    margin-bottom: -10px;
+}
+
+.tittle h4::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color:orangered;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.tittle h3::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: rgb(47, 173, 211);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.tittle h3{
+    text-align: capitalize;
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.menu{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-kategori {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+}
+
+.menu .menu-kategori{
+    margin: 50px 20px 50px 20px;
+}
+
+.single-menu {
+    margin: 0 auto;
+}
+
+.single-menu img {
+    width: 350px;
+    height: 350px;
+    margin: 50px 0 0 0;
+}
+
+h4{ 
+    text-align: center;
+}
+@media screen and (max-width : 800px) {
+    .menu {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .menu-kategori {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .single-menu img {
+        width: 100%;
+    }
+}

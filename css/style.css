@@ -1,0 +1,401 @@
+/* Select style all */
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper-navbar {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.logo a{
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #364f6b;
+}
+.menu-navbar {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex; /*Biar bisa membuat seperti kolom kolom*/
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky; /*Untuk safari*/
+    top: 0;
+    background: #FFFFFF;
+    z-index: 3;
+    border-bottom: 1px solid #364f6b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Drop down menu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menu-item:hover .submenu-item:hover,.menu-item:active .submenu-item:active  {
+    background: gray;
+}
+
+.menu-item:hover > .submenu, .menu-item:active > .submenu {
+    display: block;
+}
+
+/* End of drop down menu */
+
+section {
+    margin: 40px auto;
+    display: flex;
+}
+.kolom {
+    margin: 0px 20px 50px 20px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
+}
+
+.kolom p {
+    line-height: 24px;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-pink {
+    background: #fc5185;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-pink:hover{
+    background: #3f72af;
+    text-decoration: none;
+}
+
+p{
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+#par2::before{
+    content: "\a";
+    white-space: pre;
+}
+#par3::before{
+    content: "\a";
+    white-space: pre;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.tutor-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-tutor {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-tutor img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu-tutor p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #364f6b;
+}
+
+.partner-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-partner {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-partner img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#contact {
+    background: #dedede;
+    padding: 50px 0px 50px 0px;
+
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+/* Image Slider */
+.container { 
+    width: 600px;
+}
+.wrap-slider {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 550px;
+    margin: auto;
+}
+#slider-inner {
+    width: 500px;
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#slider-inner img {
+    height: auto;
+    width: 500px;
+    object-fit: cover;
+}
+
+#previous{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: none;
+    margin: 10% 20px 5px -5px;
+    z-index: 2;
+}
+
+#previous:hover {
+    cursor: pointer;
+}
+
+#next { 
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin: 10% 20px 5px 450px;
+    border: none;
+}
+
+#next:hover {
+    cursor: pointer;
+}
+/* End of image slider */
+
+.logo a img {
+    width: 15%;
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+.footer-section a {
+    color: #000000;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+#home {
+    justify-content: center;
+}
+
+@media screen and (max-width : 800px) {
+    .wrapper-navbar {
+        width: 100%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo a img{
+        width: 25%;
+    }
+
+    nav .menu-navbar {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu-navbar ul{
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu-navbar li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+
+    }
+    section img :not(.container) {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .container { 
+        width: 100%;
+    }
+    .wrap-slider {
+        width: 100%;
+    }
+    #slider-inner {
+        width: 300%;
+    }
+    
+    #slider-inner img {
+        height: auto;
+        width: 340px;
+        object-fit: cover;
+    }
+    
+    #previous img{
+        /* margin: 10% 20px 5px -5px;
+         */
+        margin-top: 60px;
+        margin-left: -70px;
+    }
+    
+    #next img{ 
+        /* margin: 50% 20px 5px 450px; */
+        margin-top: 250px;
+        margin-right: -120px;
+    }
+
+    .next {
+        margin-left: -60px;
+    }
+
+    .kartu-tutor {
+        width: 50%;
+    }
+
+    .kartu-partner {
+        width: 50%;
+    }
+
+    .footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+    
+    #previous{
+        margin: 20% 0px 5px 15%;
+    }
+    
+    #next { 
+        margin: -31% 0px 5px 68%;
+    }
+
+    .kolom {
+        text-align: center;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 70%;
+        background-color: #f1f1f1;
+        min-width: 160px;
+    }
+   
+}
