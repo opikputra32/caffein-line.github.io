@@ -7,7 +7,7 @@ const cvvVisa = $("#input-cvv");
 const form_visa = $("#payment-visa");
 const syaratKetentuan = document.getElementById("term-and-condition");
 
-navbar.load("../html/navbar.html");
+navbar.load("navbar.html");
 
 form.onsubmit = e => {
     e.preventDefault();

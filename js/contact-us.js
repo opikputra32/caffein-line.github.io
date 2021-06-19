@@ -3,7 +3,7 @@ const form = document.querySelector("form");
 const email = document.querySelector("#email");
 
 
-navbar.load("../html/navbar.html");
+navbar.load("navbar.html");
 
 
 form.onsubmit = e => {

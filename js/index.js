@@ -37,6 +37,6 @@ function updateSlider() {
 
 }
 
-navbar.load("html/navbar.html");
+navbar.load("navbar.html");
   
   

@@ -1,3 +1,3 @@
 const navbar = $("#nav-bar");
 
-navbar.load("../html/navbar.html");
+navbar.load("../navbar.html");
